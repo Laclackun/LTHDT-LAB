@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package LAB_06.Cau_01;
+package LAB_06.Cau_02;
 
 /**
  *
@@ -18,5 +18,4 @@ public class HocSinhChuyenToan extends HocSinh {
     public float diemTrungBinh (){
     return (toan*2+ly+hoa)/4;
     }
-
 }
