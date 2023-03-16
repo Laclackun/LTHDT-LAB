@@ -9,8 +9,8 @@ package LAB_06.Cau_01;
  * @author TAMTRAN
  */
 public class NhanVien {
-    private String ten;
-    private long luong;
+    String ten;
+    long luong;
 
     public NhanVien() {
         this.ten = null;
@@ -27,7 +27,7 @@ public class NhanVien {
     }
     
     public void tinhLuong(){
-        System.out.println("Luong cua " + ten + "thang nay la " + luong);
+        System.out.println("Luong cua " + ten + " thang nay la " + luong);
     }
     
     public void xuatThongTin(){
