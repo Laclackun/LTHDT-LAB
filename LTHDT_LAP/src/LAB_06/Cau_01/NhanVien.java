@@ -17,7 +17,7 @@ public class NhanVien {
         this.luong = 0;
     }
 
-    public NhanVien(String ten, String loai, long luong) {
+    public NhanVien(String ten, long luong) {
         this.ten = ten;
         this.luong = luong;
     }
