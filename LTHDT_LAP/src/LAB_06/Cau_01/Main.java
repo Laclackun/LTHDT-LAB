@@ -13,7 +13,7 @@ public class Main {
       
       NhanVien nv = new NhanVien("Minh", 5000);
       
-      NhanVienPartTime nvp = new NhanVienPartTime("Minh", 3,5000);
+      NhanVienPartTime nvp = new NhanVienPartTime("Minh", 3, 5000);
       nvp.xuatThongTin();
       nvp.tinhLuong();
       
