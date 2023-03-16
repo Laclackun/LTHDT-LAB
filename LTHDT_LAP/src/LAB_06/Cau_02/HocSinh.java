@@ -11,9 +11,17 @@ package LAB_06.Cau_02;
 public class HocSinh {
     private String hoTen;
     private String lop;
-    private float toan;
-    private float ly;
-    private float hoa;
+    float toan;
+    float ly;
+    float hoa;
+    
+    public HocSinh() {
+        this.hoTen=null;
+        this.lop=null;
+        this.toan=0;
+        this.ly=0;
+        this.hoa=0;
+    }
 
     public HocSinh(String hoTen, String lop, float toan, float ly, float hoa) {
     this.hoTen=hoTen;
