@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package LAB_06.Cau_01;
+package LAB_06.Cau_02;
 
 /**
  *
  * @author TAMTRAN
  */
 public class HocSinh {
-    private String HoTen;
+    private String hoTen;
     private String lop;
     private float toan;
     private float ly;
@@ -66,5 +66,4 @@ public class HocSinh {
     public float diemTrungBinh (){
     return (toan+ly+hoa)/3;
     }
-
 }
