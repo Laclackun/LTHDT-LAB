@@ -10,27 +10,20 @@ package LAB_06.Cau_01;
  */
 public class NhanVien {
     private String ten;
-    private String loai;
     private long luong;
 
     public NhanVien() {
         this.ten = null;
-        this.loai = null;
         this.luong = 0;
     }
 
     public NhanVien(String ten, String loai, long luong) {
         this.ten = ten;
-        this.loai = loai;
         this.luong = luong;
     }
 
-    public void setLoai(String loai) {
-        this.loai = loai;
-    }
-    
-    public String getLoai(){
-        return loai;
+    public void loaiNhanVien(){
+        System.out.println("Loai Nhan Vien: ");
     }
     
     public void tinhLuong(){
@@ -39,7 +32,7 @@ public class NhanVien {
     
     public void xuatThongTin(){
         System.out.println("Ten Nhan Vien: " + ten);
-        System.out.println("Loai Nhan Vien: " + loai);
+        loaiNhanVien();
         System.out.println("Co Muc Luong: " + luong);
     }
     
