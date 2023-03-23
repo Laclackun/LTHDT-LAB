@@ -39,7 +39,6 @@ public class ChuyenXeNgoaiThanh extends ChuyenXe {
         return soNgayDiDuoc;
     }
 
-    public void SoNgayDiDuoc(String soNgayDiDuoc) {
+    public void SoNgayDiDuoc(double soNgayDiDuoc) {
         this.soNgayDiDuoc = soNgayDiDuoc;
     }
-    
