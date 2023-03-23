@@ -28,6 +28,19 @@ public class ChuyenXe {
        this.doanhThu=doanhThu;
     }
 
+    public void loaiChuyenXe(){
+        System.out.println("Loai Chuyen Xe:");
+    }
+
+    public void thongTinChuyen(){
+        System.out.println("Ten Tai Xe: " + hoTenTX);
+        System.out.println("So Xe: " + soXe);
+        System.out.println("Ma So Chuyen: " + maSoChuyen);
+        loaiChuyenXe();
+        System.out.println("Co Doanh Thu: " + doanhThu); 
+    }
+
+
     public String HoTenTX() {
         return hoTenTX;
     }
