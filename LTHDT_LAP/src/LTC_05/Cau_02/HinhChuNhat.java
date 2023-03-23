@@ -22,19 +22,19 @@ public class HinhChuNhat extends Hinh {
         this.cr = cr;
     }
 
-    public double getcd() {
+    public float getcd() {
         return cd;
     }
 
-    public double getcr() {
+    public float getcr() {
         return cr;
     }
 
-    public void setcd(double cd) {
+    public void setcd(float cd) {
         this.cd = cd;
     }
 
-    public void setcr(double cr) {
+    public void setcr(float cr) {
         this.cr = cr;
     }
 
