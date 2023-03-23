@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package LTC_05.Cau_02;
+import java.util.Scanner;
 
 /**
  *
@@ -36,6 +37,14 @@ public class HinhChuNhat extends Hinh {
 
     public void setcr(float cr) {
         this.cr = cr;
+    }
+
+    public void nhapHinhChuNhat(){
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Xin Hay Nhap cdai = ");
+        cd = sc.nextFloat();
+        System.out.print("Xin Hay Nhap crong = ");
+        cr = sc.nextFloat();
     }
 
     @Override
