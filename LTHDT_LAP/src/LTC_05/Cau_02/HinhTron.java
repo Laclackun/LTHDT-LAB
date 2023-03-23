@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package LTC_05.Cau_02;
+import java.util.Scanner;
 
 /**
  *
@@ -25,6 +26,12 @@ public class HinhTron extends Hinh {
 
     public void setr(float r) {
         this.r = r;
+    }
+
+    public void nhapHinhTron(){
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Xin Hay Nhap r = ");
+        r = sc.nextFloat();
     }
 
     @Override
