@@ -12,14 +12,20 @@ public class ChuyenXeNoiThanh extends ChuyenXe {
     private String soTuyen;
     private double soKmDiDuoc;
 
-    public ChuyenXe() {
-       this.soTuyen = 0;
+    public ChuyenXeNoiThanh() {
+       this.soTuyen = null;
        this.soKmDiDuoc = 0;
+    }
 
-    public ChuyenXeNgoaiThanh(String hoTenTX, double maSoChuyen, double soXe, double doanhThu, String soTuyen, double soKmDiDuoc) {
-       super(hoTenTX, maSoChuyen, soXe, doanhThu);
-       this.soTuyen=soTuyen;
-       this.soKmDiDuoc=soKmDiDuoc;
+    public ChuyenXeNoiThanh(String soTuyen, double soKmDiDuoc) {
+        this.soTuyen = soTuyen;
+        this.soKmDiDuoc = soKmDiDuoc;
+    }
+
+    public ChuyenXeNoiThanh(String soTuyen, double soKmDiDuoc, String hoTenTX, double maSoChuyen, double soXe, double doanhThu) {
+        super(hoTenTX, maSoChuyen, soXe, doanhThu);
+        this.soTuyen = soTuyen;
+        this.soKmDiDuoc = soKmDiDuoc;
     }
 
     @Override
@@ -27,19 +33,19 @@ public class ChuyenXeNoiThanh extends ChuyenXe {
         System.out.println("Loai Chuyen Xe: Noi Thanh.");
     }
 
-    public String soTuyen() {
+    public String getSoTuyen() {
         return soTuyen;
     }
 
-    public void soTuyen(String soTuyen) {
+    public void setSoTuyen(String soTuyen) {
         this.soTuyen = soTuyen;
     }
 
-    public String SoKmDiDuoc() {
+    public double getSoKmDiDuoc() {
         return soKmDiDuoc;
     }
 
-    public void SoKmDiDuoc(double soKmDiDuoc) {
+    public void setSoKmDiDuoc(double soKmDiDuoc) {
         this.soKmDiDuoc = soKmDiDuoc;
     }
-    
+}
