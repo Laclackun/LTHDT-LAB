@@ -72,5 +72,4 @@ public class ChuyenXe {
     public void doanhThu(double doanhThu) {
         this.doanhThu = doanhThu;
     }
-
-
+}
