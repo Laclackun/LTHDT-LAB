@@ -12,33 +12,40 @@ public class ChuyenXeNgoaiThanh extends ChuyenXe {
     private String noiDen;
     private double soNgayDiDuoc;
 
-    public ChuyenXe() {
+    public ChuyenXeNgoaiThanh() {
        this.noiDen = null;
        this.soNgayDiDuoc = 0;
+    }
 
-    public ChuyenXeNgoaiThanh(String hoTenTX, double maSoChuyen, double soXe, double doanhThu, String noiDen, double soNgayDiDuoc) {
-       super(hoTenTX, maSoChuyen, soXe, doanhThu);
-       this.noiDen=noiDen;
-       this.soNgayDiDuoc=soNgayDiDuoc;
+    public ChuyenXeNgoaiThanh(String noiDen, double soNgayDiDuoc) {
+        this.noiDen = noiDen;
+        this.soNgayDiDuoc = soNgayDiDuoc;
+    }
+
+    public ChuyenXeNgoaiThanh(String noiDen, double soNgayDiDuoc, String hoTenTX, double maSoChuyen, double soXe, double doanhThu) {
+        super(hoTenTX, maSoChuyen, soXe, doanhThu);
+        this.noiDen = noiDen;
+        this.soNgayDiDuoc = soNgayDiDuoc;
     }
 
     @Override
     public void loaiChuyenXe(){
         System.out.println("Loai Chuyen Xe: Ngoai Thanh.");
     }
-
-    public String NoiDen() {
+    
+    public String getNoiDen() {
         return noiDen;
     }
 
-    public void NoiDen(String hoTenTX) {
+    public void setNoiDen(String noiDen) {
         this.noiDen = noiDen;
     }
 
-    public String SoNgayDiDuoc() {
+    public double getSoNgayDiDuoc() {
         return soNgayDiDuoc;
     }
 
-    public void SoNgayDiDuoc(double soNgayDiDuoc) {
+    public void setSoNgayDiDuoc(double soNgayDiDuoc) {
         this.soNgayDiDuoc = soNgayDiDuoc;
     }
+}    
