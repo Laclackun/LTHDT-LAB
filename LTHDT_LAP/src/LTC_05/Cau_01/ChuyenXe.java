@@ -40,36 +40,35 @@ public class ChuyenXe {
         System.out.println("Co Doanh Thu: " + doanhThu); 
     }
 
-
-    public String HoTenTX() {
+    public String getHoTenTX() {
         return hoTenTX;
     }
 
-    public void HoTenTX(String hoTenTX) {
+    public void setHoTenTX(String hoTenTX) {
         this.hoTenTX = hoTenTX;
     }
 
-    public double MaSoChuyen() {
+    public double getMaSoChuyen() {
         return maSoChuyen;
     }
 
-    public void MaSoChuyen(double maSoChuyen) {
+    public void setMaSoChuyen(double maSoChuyen) {
         this.maSoChuyen = maSoChuyen;
     }
 
-    public double SoXe() {
+    public double getSoXe() {
         return soXe;
     }
 
-    public void SoXe(double soXe) {
+    public void setSoXe(double soXe) {
         this.soXe = soXe;
     }
 
-    public double doanhThu() {
+    public double getDoanhThu() {
         return doanhThu;
     }
 
-    public void doanhThu(double doanhThu) {
+    public void setDoanhThu(double doanhThu) {
         this.doanhThu = doanhThu;
     }
 }
