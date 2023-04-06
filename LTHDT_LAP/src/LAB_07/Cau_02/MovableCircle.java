@@ -2,12 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package LAB_04.Cau_01;
+package LAB_07.Cau_02;
 
 /**
  *
  * @author TAMTRAN
  */
+
 public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
