@@ -38,4 +38,4 @@ public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
 
     @Override    
     public String toString() {
-        return "X = " + x + " Y = " + y + " X co toc do la: " + xSpeed + " Y co toc do la: " + ySpeed;
+        return "MovablePoint co X = " + x + " Y = " + y + " X co toc do la: " + xSpeed + " Y co toc do la: " + ySpeed;
