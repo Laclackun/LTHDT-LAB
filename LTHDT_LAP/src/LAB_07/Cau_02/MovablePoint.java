@@ -9,6 +9,12 @@ package LAB_07.Cau_02;
  * @author TAMTRAN
  */
 
+public class MovablePoint implements Movable {
+    public int x;
+    public int y;
+    public int xSpeed;
+    public int ySpeed;
+        
 public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
         this.y = y;
