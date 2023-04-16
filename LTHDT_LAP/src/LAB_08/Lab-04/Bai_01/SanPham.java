@@ -1,27 +1,14 @@
 public class SanPham {
-    private String tenSp;
+    private String tenSP;
     private double donGia;
     private double giamGia;
 
-    public SanPham() {
-        this.tenSp = null;
-        this.donGia = 0;
-        this.giamGia = 0;
+    public String getTenSP() {
+        return tenSP;
     }
 
-    public SanPham(String tenSp, double donGia, double giamGia) {
-        this.tenSp = tenSp;
-        this.donGia = donGia;
-        this.giamGia = giamGia;
-    }
-
-
-    public String getTenSp() {
-        return tenSp;
-    }
-
-    public void setTenSp(String tenSp) {
-        this.tenSp = tenSp;
+    public void setTenSP(String tenSP) {
+        this.tenSP = tenSP;
     }
 
     public double getDonGia() {
@@ -39,3 +26,21 @@ public class SanPham {
     public void setGiamGia(double giamGia) {
         this.giamGia = giamGia;
     }
+
+    public SanPham(String tenSP, double donGia, double giamGia) {
+        this.tenSP = tenSP;
+        this.donGia = donGia;
+        this.giamGia = giamGia;
+    }
+
+    private double getThueNhapKhau() {
+        return donGia * 0.1;
+    }
+
+    public void xuat() {
+        System.out.println("Ten san pham: " + tenSP);
+        System.out.println("Don gia: " + donGia);
+        System.out.println("Giam gia: " + giamGia);
+        System.out.println("Thue nhap khau: " + getThueNhapKhau());
+    }
+}
