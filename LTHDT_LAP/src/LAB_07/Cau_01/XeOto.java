@@ -29,4 +29,5 @@ public class XeOto extends PhuongTienDiChuyen{
     public double layVanToc(){
         return 120;
     }
+    
 }
