@@ -36,4 +36,5 @@ public class MayBay extends PhuongTienDiChuyen {
     public double layVanToc(){
         return 1000;
     }
+    
 }
