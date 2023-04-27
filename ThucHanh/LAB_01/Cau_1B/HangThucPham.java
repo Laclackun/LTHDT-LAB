@@ -77,7 +77,6 @@ public class HangThucPham {
     
     @Override
     public String toString() {
-        //sử dung phương thức Locale để biến đổi theo tiền tệ việt nam
         Locale localeVN = new Locale("vi", "VN");
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance(localeVN);
         String str = numberFormat.format(donGia);
