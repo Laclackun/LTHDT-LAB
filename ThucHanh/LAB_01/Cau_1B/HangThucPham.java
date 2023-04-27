@@ -85,10 +85,10 @@ public class HangThucPham {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String str1 = simpleDateFormat.format(ngaySanXuat);
         String str2 = simpleDateFormat.format(ngayHetHan);
-        return "____________________________________________________________________________+"
+        return "_____________________________________________________________________________"
                 + "\nMã_Hàng  " + "  Tên_Hàng " + "        Đơn_Giá " + "  Ngày_Sản_Xuất  " + "  Ngày_Hết_Hạn" + "  Ghi_Chú" +
                 "\n-----------------------------------------------------------------------------" +
-                "\n   " + maHang +"           "+ tenHang +"              "+ str +"      "+ str1 + "      " + str2;
+                "\n " + maHang +"           "+ tenHang +"             "+ str +"      "+ str1 + "      " + str2;
                 
     }
 
