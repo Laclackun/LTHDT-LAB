@@ -86,35 +86,33 @@ public class Account {
     
      public double napTien() {
         double nap;
-        System.out.print("Nhập số tiền bạn cần nạp: ");
+        System.out.print("Nhap so tien ban can nap: ");
         nap = sc.nextDouble();
-        //nếu số tiền nạp vào lớn hơn 0 thì hợp lệ
         if (nap >= 0) {
             sotien = nap + sotien;
             Locale local = new Locale("vi", "vn");
             NumberFormat formatter = NumberFormat.getCurrencyInstance(local);
             String sotienformat = formatter.format(nap);
-            System.out.println("bạn vừa nạp " + sotienformat + " vào tài khoản.");
-        } else {//ngược lại nếu số tiền nộp vào bé hơn 0 thì không hợp lệ
-            System.out.println("Số tiền nạp vào không hợp lệ!");
+            System.out.println("Ban vua nap " + sotienformat + " vao tai khoan.");
+        } else {
+            System.out.println("So tien nap vao khong hop le!");
         }
         return nap;
     }
- 
+
     public double rutTien() {
         double phi = 5;
         double rut;
-        System.out.print("Nhập số tiền bạn cần rút: ");
+        System.out.print("Nhap so tien ban can rut: ");
         rut = sc.nextDouble();
-        //nếu số tiền rút bé hơn hoặc bằng số tiền còn trong tài khoản + phí thì hợp lệ
         if (rut <= (sotien - phi)) {
             sotien = sotien - (rut + phi);
             Locale local = new Locale("vi", "vn");
             NumberFormat formatter = NumberFormat.getCurrencyInstance(local);
             String sotienformat = formatter.format(rut);
-            System.out.println("Bạn vừa rút " + sotienformat + "Đ từ tài khoản. Phí là $5.");
-        } else {//ngược lại nếu số tiền rút lớn hơn số tiền có trong tài khoản thì không hợp lệ
-            System.out.println("Số tiền muốn rút không hợp lệ!");
+            System.out.println("Ban vua rut " + sotienformat + "tu tai khoan.");
+        } else {
+            System.out.println("So tien rut vao khong hop le!");
             return rutTien();
         }
         return rut;
