@@ -101,7 +101,6 @@ public class Account {
         return nap;
     }
  
-    //khởi tạo phương thức rút tiền
     public double rutTien() {
         double phi = 5;
         double rut;
@@ -120,8 +119,7 @@ public class Account {
         }
         return rut;
     }
- 
-    //khởi tạo phương thức in kết quả ra màn hình
+
     void inTK() {
         Locale local = new Locale("vi", "vn");
         NumberFormat formatter = NumberFormat.getCurrencyInstance(local);
