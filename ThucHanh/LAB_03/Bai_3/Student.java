@@ -43,8 +43,7 @@ class Student {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("%-6s | %-15s | %10s |\n"
-                ,"Ma SV", "Ho va Ten", "Nam Sinh"));
+        sb.append(String.format("%-6s | %-15s | %10s |\n","Ma SV", "Ho va Ten", "Nam Sinh"));
         sb.append(String.format("%-6s | %-15s | %10s |\n", id, name,birthYear));
         return sb.toString();
     }
