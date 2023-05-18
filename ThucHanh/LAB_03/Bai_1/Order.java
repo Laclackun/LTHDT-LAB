@@ -5,6 +5,7 @@
 package LAB_03.Bai_1;
 import java.time.LocalDate;
 import java.text.DecimalFormat;
+import java.time.format.DateTimeFormatter;
 
 /**
  *
@@ -38,9 +39,10 @@ public class Order {
     @Override
     public String toString() {
         DecimalFormat decimalFormat = new DecimalFormat("#,###0.000");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("DD/MM/YYYY");
         StringBuilder sb = new StringBuilder();
         sb.append("Ma HD: ").append(orderID ).append("\n");
-        sb.append("Ngay lap hoa don: ").append(orderDate ).append("\n");
+        sb.append("Ngay lap hoa don: ").append(formatter.format(orderDate)).append("\n");
         sb.append(String.format("%-5s | %-10s | %-15s | %15s | %8s | %15s \n"
                 ,"STT", "Ma SP", "Mo ta", "Don Gia", "So Luong", "Thanh Tien"));
         
