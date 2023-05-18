@@ -42,7 +42,11 @@ class Student {
 
     @Override
     public String toString() {
-        return "ID: " + id + ", Name: " + name + ", Birth Year: " + birthYear;
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("%-6s | %-15s | %10s |\n"
+                ,"Ma SV", "Ho va Ten", "Nam Sinh"));
+        sb.append(String.format("%-6s | %-15s | %10s |\n", id, name,birthYear));
+        return sb.toString();
     }
 }
 
