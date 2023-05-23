@@ -24,11 +24,11 @@ public class QuanLyGiaoDich {
 
     public void xuatDanhSachGiaoDich() {
         for (GiaoDich giaoDich : danhSachGiaoDich) {
-            System.out.println("Mã giao dịch: " + giaoDich.getMaGiaoDich());
-            System.out.println("Ngày giao dịch: " + giaoDich.getNamGiaoDich());
-            System.out.println("Diện tích: " + giaoDich.getDienTich());
-            System.out.println("Thành tiền: " + giaoDich.tinhThanhTien());
-            System.out.println("-------------------------------------");
+            System.out.printf("%-6s | %-10s | %10s | %10s | %15s \n",
+                    "Ma GD", "Ngay GD", "Dien Tich", "Don Gia", "Thanh Tien");
+            System.out.printf("%-6s | %-10s | %10s | %10s | %15s \n",
+                    giaodich.getMaGD(), giaodich.getNamGD(), giaodich.getDonGia(), giaodich.getDienTich(), giaodich.tinhThanhTien());
+            System.out.println("------------------------------------------------------------------------");
         }
     }
 
