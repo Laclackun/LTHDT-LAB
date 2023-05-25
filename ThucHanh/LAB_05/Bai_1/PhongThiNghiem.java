@@ -24,7 +24,7 @@ public class PhongThiNghiem extends PhongHoc {
 
     @Override
     public String toString() {
-        return "___ PhongLyThuyet ___\n" 
+        return "___ PhongThiNghiem ___\n" 
             "Ma Phong: " + getMaPhong() + "\n" +
             "Day Nha: " + getDayNha() + "\n" +
             "Dien Tich: " + getDienTich() + "\n" +
