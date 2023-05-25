@@ -28,6 +28,6 @@
 
     @Override
     public String toString() {
-        return "PhongHoc [maPhong=" + maPhong + ", dayNha=" + dayNha + ", dienTich=" + dienTich + ", soBongDen=" + soBongDen + "]";
+        return "";
     }
 }
