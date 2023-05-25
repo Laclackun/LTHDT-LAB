@@ -1,4 +1,4 @@
-class PhongLyThuyet extends PhongHoc {
+public class PhongLyThuyet extends PhongHoc {
     private boolean coMayChieu;
 
     public PhongLyThuyet(String maPhong, String dayNha, double dienTich, int soBongDen, boolean coMayChieu) {
@@ -12,6 +12,12 @@ class PhongLyThuyet extends PhongHoc {
 
     @Override
     public String toString() {
-        return "PhongLyThuyet [maPhong=" + getMaPhong() + ", dayNha=" + getDayNha() + ", dienTich=" + getDienTich() + ", soBongDen=" + getSoBongDen() + ", coMayChieu=" + coMayChieu + "]";
+        return "___ PhongLyThuyet ___\n" 
+            "Ma Phong: " + getMaPhong() + "\n" +
+            "Day Nha: " + getDayNha() + "\n" +
+            "Dien Tich: " + getDienTich() + "\n" +
+            "So Bong Den:" + getSoBongDen() + "\n" +
+            "Co May Chieu: " + coMayChieu + "\n" +
+            "------------------------------------------";
     }
 }
