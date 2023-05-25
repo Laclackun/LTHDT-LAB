@@ -1,3 +1,4 @@
+public class PhongHoc{
     private String maPhong;
     private String dayNha;
     private double dienTich;
