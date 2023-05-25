@@ -16,6 +16,12 @@ class PhongMayTinh extends PhongHoc {
 
     @Override
     public String toString() {
-        return "PhongMayTinh [maPhong=" + getMaPhong() + ", dayNha=" + getDayNha() + ", dienTich=" + getDienTich() + ", soBongDen=" + getSoBongDen() + ", soMayTinh=" + soMayTinh + "]";
-    }
+         return "___ PhongMayTinh ___\n" 
+            "Ma Phong: " + getMaPhong() + "\n" +
+            "Day Nha: " + getDayNha() + "\n" +
+            "Dien Tich: " + getDienTich() + "\n" +
+            "So Bong Den:" + getSoBongDen() + "\n" +
+            "So May Tinh: " + soMayTinh + "\n" +
+            "------------------------------------------";
+     }
 }
